@@ -20,4 +20,7 @@ sed -i '' 's|/var/db/qbittorrent/Downloads|/Downloads|g' /usr/local/etc/rc.d/qbi
 
 service qbittorrent start
 
+sysrc wireguard_interfaces="wg0"
+sysrc wireguard_enable="YES"
+
 echo "Please open the URL and Login with Username: admin, Password: adminadmin" > /root/PLUGIN_INFO
